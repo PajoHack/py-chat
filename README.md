@@ -1,39 +1,32 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Chatbot
 
-Welcome,
+## Overview
+This chatbot provides answers to questions related to specific procedures. It's designed to help users get quick information without needing to search through documents or wait for human assistance. Built with Python and Flask, this chatbot is easy to deploy and customize.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
+- **Case Insensitive Matching**: Users can ask questions in any case.
+- **Flexible Question Phrasing**: The chatbot can understand questions even if they're not phrased exactly as stored in the knowledge base.
+- **Easy Customization**: Add, remove, or update questions and answers in the chatbot's knowledge base with minimal effort.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Getting Started
 
-## Codeanywhere Reminders
+### Prerequisites
+- Python 3.6 or later
+- Flask
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Installation
+1. Clone the repository to your local machine:
+`git clone https://yourrepositorylink.com/path/to/repo.git`
+2. Navigate to the project directory: `Navigate to the project directory:`
+3. Install the required Python packages: `pip install -r requirements.txt`
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Running the Chatbot
+1. Start the Flask application: `python chatbot_app.py`
+2. Open a web browser and navigate to `http://127.0.0.1:5000/` to start interacting with the chatbot.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Customizing the Chatbot
+To customize the chatbot's knowledge base, edit the `ProcedureChatbot` class in `chatbot_app.py`. Add or modify entries in the `knowledge_base` dictionary, where each key is a question and each value is the corresponding answer.
 
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Deployment
+For instructions on deploying the chatbot to a web server, see the deployment section above. The process involves selecting a hosting service, setting up the environment, and deploying the Flask application.
